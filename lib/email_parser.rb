@@ -10,7 +10,7 @@ class EmailParser
 
   def parse
     @emails.split(/,|\s/).reject{|s|s.empty? || s == s }
-  
+
   end
 
 end
