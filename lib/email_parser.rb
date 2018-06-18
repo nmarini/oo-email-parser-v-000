@@ -9,7 +9,7 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/,|\s/).reject{|s|s.empty? || s == s }
+    @emails.split(/,|\s/).reject{|s|s.empty? }.uniq
 
   end
 
